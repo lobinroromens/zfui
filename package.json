@@ -1,0 +1,39 @@
+{
+  "name": "zfui",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rc-tools run test",
+    "compile": "gulp compile",
+    "copyless":"gulp && rc-tools run watch",
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "pub": "gulp &&rc-tools run update-self && rc-tools run pub",
+    "lint": "rc-tools run lint",
+    "karma": "rc-tools run karma",
+    "saucelabs": "rc-tools run saucelabs",
+    "chrome-test": "rc-tools run chrome-test",
+    "coverage": "rc-tools run coverage",
+    "prepublish": "rc-tools run guard"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "rc-tools": "^5.6.8"
+  },
+  "dependencies": {
+    "antd": "^1.8.0",
+    "gulp-file-copy": "^0.0.1"
+  }
+}
